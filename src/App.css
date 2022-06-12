@@ -1,0 +1,123 @@
+
+:root {
+    --main-color: #0d6efd;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    align-items: center;
+    padding: 8rem 0;
+    justify-content: space-around;
+}
+
+.hero > form {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero > form > .titleInput {
+    width: 20%;
+    /* height: 1.5rem; */
+    padding: 0.5em;
+    border: 1px solid var(--main-color);
+    border-radius: .25rem;
+    outline: none
+}
+
+
+.hero > form > .imgInput {
+    width: 70%;
+    /* height: 1.5rem; */
+    padding: 0.5em;
+    border: 1px solid var(--main-color);
+    border-radius: .25rem;
+    outline: none
+
+}
+
+.hero > form > button {
+    padding: 0.5em;
+    width: 10%;
+    /* border: 1px solid #000; */
+    border: 1px solid transparent;
+    color: #fff;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    border-radius: .25rem;
+}
+
+.hero > form > button:hover {
+    cursor: pointer;
+    background-color: #6694da;
+}
+
+.hero > form > button:active {
+    background-color: #134590;
+}
+
+.spinner {
+    display: inline-block;
+    border: 0.5em solid #f3f3f3; /* Light grey */
+    border-top: 0.5em solid var(--main-color); /* Blue */
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    animation: spin 2s linear infinite;
+    -webkit-animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+
+.cardsContainer {
+    width: 80%;
+    /* margin: 10rem auto; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-sizing: content-box;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    border: 1px solid var(--main-color);
+    border-radius: 5%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 2px;
+    color: var(--main-color) !important;
+}
+
+.card > img{
+    width: 100%;
+    height: 80%;
+    border-radius: 6% 6% 0% 0%;
+    margin: 0 auto;
+}
+
+.card > p{
+    height: auto;
+    width: auto;
+    margin-top: 15px;
+}
+
+.card > hr {
+    margin: 0 auto;
+    background-color:var(--main-color)
+}
+
